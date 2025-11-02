@@ -20,7 +20,7 @@ function productCard(p){
     <article class="card" data-name="${p.name}" data-price="${p.price}" data-created="${p.id}"
              data-sales="${p.sales||0}" data-stock="${p.stock||0}">
       <div class="media">
-        <img src="${p.image}" alt="${p.name}">
+        <img src="${p.image}" alt="${p.name}" loading="lazy">
       </div>
       <div class="content">
         <h3 class="name">${p.name}</h3>
