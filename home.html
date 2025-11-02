@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tất cả sản phẩm – Demo</title>
+  <link rel="icon" href="https://fav.farm/🛍️">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="promo">Miễn phí vận chuyển toàn quốc cho đơn &gt; 1.000.000đ</div>
+
+  <header>
+    <div class="logo-bar">
+      <img src="logo_beso.png" alt="BESO" class="logo"/>
+    </div>
+
+    <nav class="navbar-minimal">
+      <button class="hamburger" id="menuBtn" aria-label="Mở menu" aria-expanded="false" aria-controls="mainMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div id="mainMenu" class="menu">
+        <a href="#">Trang chủ</a>
+        <a href="#">Sản phẩm</a>
+        <a href="#">Bộ sưu tập</a>
+        <a href="#">Về chúng tôi</a>
+      </div>
+
+      <div class="spacer"></div>
+
+      <div class="search compact">
+        <input id="q" placeholder="Tìm kiếm sản phẩm..." />
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </div>
+
+      <div class="icons">
+        <button class="iconbtn" aria-label="Tài khoản">
+          <img src="account.png" alt="Tài khoản" class="icon" />
+        </button>
+        <button class="iconbtn" id="cartBtn" aria-label="Giỏ hàng">
+          <img src="giỏ_hàng.png" alt="Giỏ hàng" class="icon" />
+          <span class="badge" id="cartCount">0</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <nav class="breadcrumbs" aria-label="breadcrumb">
+      <a href="#">Trang chủ</a> › <a href="#">Danh mục</a> › <span>Tất cả sản phẩm</span>
+    </nav>
+
+    <div class="titlebar">
+      <h1>Tất cả sản phẩm</h1>
+      <div class="controls">
+        <label>
+          <select id="sort" class="select" aria-label="Sắp xếp">
+            <option value="default">Sắp xếp theo</option>
+            <option value="best">Bán chạy nhất</option>
+            <option value="price-asc">Giá: Tăng dần</option>
+            <option value="price-desc">Giá: Giảm dần</option>
+            <option value="name-asc">Tên: A-Z</option>
+            <option value="name-desc">Tên: Z-A</option>
+            <option value="oldest">Cũ nhất</option>
+            <option value="newest">Mới nhất</option>
+            <option value="stock-desc">Tồn kho: Giảm dần</option>
+          </select>
+        </label>
+        <div class="grid-toggle" role="tablist" aria-label="Chế độ lưới">
+          <button data-cols="2" aria-label="2 cột">2×</button>
+          <button data-cols="3" aria-label="3 cột">3×</button>
+          <button data-cols="4" class="active" aria-label="4 cột">4×</button>
+        </div>
+      </div>
+    </div>
+
+    <section id="grid" class="grid" aria-live="polite"></section>
+
+    <nav class="pagination" aria-label="Phân trang">
+      <button id="prev" type="button">Trước</button>
+      <button class="active" type="button">1</button>
+      <button type="button">2</button>
+      <button type="button">3</button>
+      <button id="next" type="button">Sau</button>
+    </nav>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h4>Giới thiệu</h4>
+        <p class="muted">Đây là bản mẫu giao diện bộ sưu tập sản phẩm.</p>
+      </div>
+      <div>
+        <h4>Liên kết</h4>
+        <ul class="muted" style="list-style:none;padding:0;line-height:1.9">
+          <li><a href="#">Chính sách đổi trả</a></li>
+          <li><a href="#">Chính sách bảo mật</a></li>
+          <li><a href="#">Điều khoản dịch vụ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Liên hệ</h4>
+        <p class="muted">hello@example.com<br/>0123 456 789</p>
+      </div>
+      <div>
+        <h4>Kết nối</h4>
+        <p>💬 Messenger · ✉️ Email</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
